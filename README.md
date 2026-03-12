@@ -16,8 +16,11 @@ Uma aplicação Full-Stack desenvolvida em React para o monitoramento inteligent
 
 ##  Como visualizar o projeto
 O código fonte está disponível aqui no repositório. Para rodar localmente:
-1. `npm install` para instalar as dependências.
-2. `npm start` para iniciar o servidor de desenvolvimento.
+1-Extraia o zip
+2-Abra o powershel demtro da pasta extraída
+3-No powershel digite:
+npm install \\para instalar as dependências.
+npm start \\para iniciar o servidor de desenvolvimento.
 
 ---
 *Projeto desenvolvido como parte das atividades de extensão acadêmica em sistemas de informação.*
