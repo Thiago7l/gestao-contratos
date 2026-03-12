@@ -1,38 +1,23 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+:root { --laranja: #e67e22; --azul: #2c3e50; --fundo: #f4f7f6; }
+.App { background: var(--fundo); min-height: 100vh; padding-bottom: 80px; font-family: sans-serif; }
+.menu-navegacao { display: flex; justify-content: center; background: white; padding: 10px; gap: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+.menu-navegacao button { padding: 10px; border: none; background: none; cursor: pointer; font-weight: bold; color: #7f8c8d; }
+.menu-navegacao button.active { color: var(--azul); border-bottom: 3px solid var(--laranja); }
+header h1 { text-align: center; color: var(--azul); margin: 20px; }
+.form-moderno { max-width: 600px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.grid-form { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.campo { display: flex; flex-direction: column; gap: 5px; margin-bottom: 15px; }
+input, select { padding: 10px; border: 1px solid #ddd; border-radius: 6px; }
+.btn-toggle-laranja { background: var(--laranja); color: white; border: none; padding: 10px; border-radius: 6px; font-weight: bold; cursor: pointer; }
+.btn-finalizar { width: 100%; padding: 12px; background: #27ae60; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; }
+.lista-gerenciamento { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+.card-gerencia { background: white; padding: 15px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; border-left: 6px solid #ccc; }
+.card-gerencia.alerta { border-left-color: var(--laranja); background: #fffaf0; }
+.tag-laranja { background: var(--laranja); color: white; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.tag-pediu { background: #eee; padding: 3px 8px; border-radius: 4px; font-size: 12px; margin-left: 5px; }
+.aviso-urgente { color: #c0392b; font-weight: bold; font-size: 12px; margin-top: 5px; }
+.card-acoes { display: flex; gap: 10px; font-size: 1.5rem; }
+.card-acoes button, .card-acoes a { background: none; border: none; cursor: pointer; text-decoration: none; }
+.barra-alerta-fixa { position: fixed; bottom: 0; left: 0; right: 0; background: #d35400; color: white; padding: 15px; z-index: 1000; }
+.conteudo-alerta { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.barra-alerta-fixa button { background: white; color: #d35400; border: none; padding: 5px 10px; border-radius: 4px; font-weight: bold; cursor: pointer; }
