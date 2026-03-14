@@ -21,7 +21,7 @@ O código fonte está disponível aqui no repositório. Para rodar localmente:
 
 2-Abra o powershel dentro da pasta extraída
 
-3-No powershel digite:
+3-No powershell digite:
 
 \\para instalar as dependências.
 
